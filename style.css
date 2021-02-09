@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanalei&display=swap");
+.body {
+  background: #fafafa;
+}
+.dino {
+  width: 60px;
+  height: 60px;
+  background-image: url(assets/dino.png);
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.cactus {
+  position: absolute;
+  background-image: url(assets/cactus.png);
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+}
+
+h1 {
+  font-family: "Hanalei", cursive;
+  text-align: center;
+  color: #666666;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0;
+  }
+}
+.game-background {
+  position: absolute;
+  bottom: 0;
+  background-image: url(assets/background.png);
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+}
